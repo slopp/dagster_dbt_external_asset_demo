@@ -5,3 +5,4 @@ dbt-duckdb
 dagster-dbt==0.23.11
 ruff
 harlequin
+httpx

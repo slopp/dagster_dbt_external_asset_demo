@@ -3,4 +3,4 @@ version: 2
 sources:
   - name: "main"
     tables:
-      - name: "locations"
+      - name: "raw_locations"
