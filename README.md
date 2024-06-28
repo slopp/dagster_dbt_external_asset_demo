@@ -27,7 +27,7 @@ Supporting documentation:
 
 ```
 pip install -r requirements.txt
-dbt compile --project-dir jaffle_shop_duckdb --profiles-dir jaffle_shop_duckd
+dbt compile --project-dir jaffle_shop_duckdb --profiles-dir jaffle_shop_duckdb
 dagster dev -f definitions.py&
 python run_dbt.py
 ```
