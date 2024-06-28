@@ -1,0 +1,19 @@
+[0m10:07:55.303741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1308fe140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x131c7a440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x131c7b280>]}
+
+
+============================== 10:07:55.314648 | 40e23529-b671-423b-a684-1e889b0f311b ==============================
+[0m10:07:55.314648 [info ] [MainThread]: Running with dbt=1.8.3
+[0m10:07:55.315020 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'jaffle_shop_duckdb/logs', 'version_check': 'True', 'profiles_dir': 'jaffle_shop_duckdb', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt compile --project-dir jaffle_shop_duckdb --profiles-dir jaffle_shop_duckdb', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:07:56.019656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '40e23529-b671-423b-a684-1e889b0f311b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1314f4040>]}
+[0m10:07:56.056893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '40e23529-b671-423b-a684-1e889b0f311b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x131c78ca0>]}
+[0m10:07:56.058717 [info ] [MainThread]: Registered adapter: duckdb=1.8.1
+[0m10:07:56.070562 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m10:07:56.071198 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:07:56.071720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '40e23529-b671-423b-a684-1e889b0f311b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x132cceec0>]}
+[0m10:07:56.634140 [error] [MainThread]: Encountered an error:
+Compilation Error in model locations (models/locations.sql)
+  source() takes exactly two arguments (1 given)
+[0m10:07:56.635169 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_wall_clock_time": 1.3803582, "process_user_time": 3.162963, "process_kernel_time": 2.298895, "process_mem_max_rss": "156549120", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:07:56.635542 [debug] [MainThread]: Command `dbt compile` failed at 10:07:56.635474 after 1.38 seconds
+[0m10:07:56.635784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1308fe140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1339adab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1339aea70>]}
+[0m10:07:56.636007 [debug] [MainThread]: Flushing usage events
